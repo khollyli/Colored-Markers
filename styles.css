@@ -10,3 +10,15 @@ h1 {
     /* This creates some space between the divs */
     margin: 10px auto;
 }
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: green;
+}
+
+.three {
+    background-color: blue;
+}
