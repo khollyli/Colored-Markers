@@ -7,6 +7,6 @@ h1 {
     it doesn't have any height by default */
     height: 25px;
     width: 200px;
-    background-color: red;
-    margin: auto;
+    /* This creates some space between the divs */
+    margin: 10px auto;
 }
