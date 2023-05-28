@@ -2,6 +2,13 @@ h1 {
     text-align: center;
 }
 
+.container {
+    background-color: rgb(255, 255, 255);
+    /* Applies 10px padding to top and bottom;
+    applies 0 padding to left and right */
+    padding: 10px 0;
+}
+
 .marker {
     /* Since the div has no content in it,
     it doesn't have any height by default */
@@ -12,13 +19,34 @@ h1 {
 }
 
 .one {
-    background-color: red;
+    /* background-color: red; */
+    /* rgb(red, green, blue); each red, green, and blue value is a number from
+    0 to 255. 0 means that there's 0% of that color, and is black. 255 means that there's
+    100% of that color. */
+    /* rgb(255, 255, 0) makes yellow;
+    secondary color*/
+    /* rgb(255, 127, 0) makes orange;
+    rgb(127, 255, 0) makes chartreuse green;
+    tertiary color */
+    background-color: rgb(255, 127, 0);
 }
 
 .two {
-    background-color: green;
+    /* background-color: green; */
+    /* rgb(0, 255, 255) makes cyan;
+    secondary color */
+    /* rgb(0, 255, 127) makes spring green;
+    rgb(0, 127, 255) makes azure;
+    tertiary color */
+    background-color: rgb(0, 255, 127);
 }
 
 .three {
-    background-color: blue;
+    /* background-color: blue; */
+    /* rgb(255, 0, 255) makes magenta;
+    secondary color */
+    /* rgb(127, 0, 255) makes violet;
+    rgb(255, 0, 127) makes rose;
+    tertiary color */
+    background-color: rgb(127, 0, 255);
 }
