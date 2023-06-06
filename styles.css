@@ -18,8 +18,7 @@ h1 {
     margin: 10px auto;
 }
 
-.one {
-    /* background-color: red; */
+.red {
     /* rgb(red, green, blue); each red, green, and blue value is a number from
     0 to 255. 0 means that there's 0% of that color, and is black. 255 means that there's
     100% of that color. */
@@ -28,25 +27,55 @@ h1 {
     /* rgb(255, 127, 0) makes orange;
     rgb(127, 255, 0) makes chartreuse green;
     tertiary color */
-    background-color: rgb(255, 127, 0);
+    /* needs a MINIMUM of two color arguments to produce gradient;
+    adding a percentage at the end of a color argument sets the color to take up that percentage
+    this is called color-stops;
+    gradientDirection is set at 180deg at default*/
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
 }
 
-.two {
-    /* background-color: green; */
+.green {
     /* rgb(0, 255, 255) makes cyan;
     secondary color */
     /* rgb(0, 255, 127) makes spring green;
     rgb(0, 127, 255) makes azure;
     tertiary color */
-    background-color: rgb(0, 255, 127);
+    /* 00 means 0% of that color;
+    FF means 100% of that color;
+    red, green, blue */
+    background: linear-gradient(#55680D, #71F53E, #116C31);
 }
 
-.three {
-    /* background-color: blue; */
+.blue {
     /* rgb(255, 0, 255) makes magenta;
     secondary color */
     /* rgb(127, 0, 255) makes violet;
     rgb(255, 0, 127) makes rose;
     tertiary color */
-    background-color: rgb(127, 0, 255);
+    background: linear-gradient(hsl(186, 76%, 16%), 
+    hsl(223, 90%, 60%), 
+    hsl(240, 56%, 42%));
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+    /* background-color: #55680D; */
+}
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    /* To add an alpha channel,
+    use the function rgba and add an extra value */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Value of 0 = 0%; value of 1.0 = 100%
+    opacity: 0.5; */
+}
+
+.cap, .sleeve {
+    /* to put them both on the same line,
+    pre-condition: cap is on the marker and
+    the sleeve has been pushed down */
+    display: inline-block;
 }
